@@ -1,4 +1,4 @@
-from src.sample_py.arith import basic
+from sample_py.sample_py.arith import basic
 
 def test_add():
     b = basic.Basic()

@@ -4,12 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["Dave Puglielli <dpuglielli@flexion.us>"]
 
+[tool.poetry.scripts]
+cli_script = "sample_py.cli:main"
+
 [tool.poetry.dependencies]
 python = "^3.8"
 numpy = "^1.21.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^7.1.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
