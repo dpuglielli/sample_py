@@ -1,8 +1,12 @@
-from .area.polygon import Polygon
-from .area.ellipse import Ellipse
-from .arith.basic import Basic
+"""Command line controller script
+"""
+from sample_py.area.polygon import Polygon
+from sample_py.area.ellipse import Ellipse
+from sample_py.arith.basic import Basic
 
 def main():
+    """Main for CLI
+    """
     val1 = float(input("Enter your value 1: "))
     val2 = float(input("Enter your value 2: "))
 

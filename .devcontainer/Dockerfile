@@ -23,13 +23,11 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 RUN apt-get update && apt-get upgrade -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
-#        && curl -sSL https://install.python-poetry.org | python3 - \
-#        && /home/vscode/.local/bin/poetry config virtualenvs.in-project fales \
-#        && /home/vscode/.local/bin/poetry install
-
 # RUN curl -L -O https://static.pantsbuild.org/setup/pants && \
 #        chmod +x ./pants && \
 #        ./pants --version
 
 USER vscode
-RUN python -m pip install --upgrade pip && pip install poetry
+RUN curl -sSL https://install.python-poetry.org | python3 - \
+    && curl -sSL -o ~/.local/bin/pants  https://static.pantsbuild.org/setup/pants \
+    && chmod 755 ~/.local/bin/pants
