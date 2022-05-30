@@ -20,8 +20,9 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
-RUN apt-get update && apt-get upgrade -y --no-install-recommends \
-    && sudo apt-get install graphviz graphviz-dev \
+RUN apt-get update \
+    && apt-get install graphviz graphviz-dev -y --no-install-recommends \
+    && apt-get upgrade -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # RUN curl -L -O https://static.pantsbuild.org/setup/pants && \

@@ -41,6 +41,7 @@
 	"extensions": [
 		"ms-python.python",
 		"ms-python.vscode-pylance",
+		"ms-vscode.live-server",
 		"eamodio.gitlens",
 		"mhutchie.git-graph",
 		"njpwerner.autodocs",

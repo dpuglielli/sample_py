@@ -4,9 +4,9 @@ from sample_py.area.polygon import Polygon
 from sample_py.area.ellipse import Ellipse
 from sample_py.arith.basic import Basic
 
+
 def main():
-    """Main for CLI
-    """
+    """Main for CLI"""
     val1 = float(input("Enter your value 1: "))
     val2 = float(input("Enter your value 2: "))
 
@@ -23,5 +23,6 @@ def main():
     print("multiply: " + str(basic.multiply(val1, val2)))
     print("divide: " + str(basic.divide(val1, val2)))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

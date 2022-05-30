@@ -1,8 +1,9 @@
 """Module for basic arithmetic
 """
+
+
 class Basic:
-    """Class for basic arithmetic
-    """
+    """Class for basic arithmetic"""
 
     def add(self, val1, val2):
         """Basic adder
@@ -53,6 +54,5 @@ class Basic:
         Returns:
             float: result of val / val2
         """
-        result = val1 /  val2
+        result = val1 / val2
         return result
-    

@@ -3,9 +3,11 @@
 Returns:
     _type_: _description_
 """
+
+
 class Ellipse:
-    """_summary_
-    """
+    """_summary_"""
+
     def circle(self, radius):
         """_summary_
 
@@ -16,5 +18,5 @@ class Ellipse:
             _type_: _description_
         """
         pi_const = 3.14
-        area = pi_const * radius ** 2
+        area = pi_const * radius**2
         return area

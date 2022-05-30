@@ -3,9 +3,11 @@
 Returns:
     _type_: _description_
 """
+
+
 class Polygon:
-    """_summary_
-    """
+    """_summary_"""
+
     def rectangle(self, width, height):
         """_summary_
 
@@ -29,5 +31,5 @@ class Polygon:
         Returns:
             _type_: _description_
         """
-        area = (width * height)/2
+        area = (width * height) / 2
         return area
