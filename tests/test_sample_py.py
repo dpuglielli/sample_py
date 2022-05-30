@@ -3,11 +3,13 @@
 from sample_py.arith import basic
 
 def test_add():
-    b = basic.Basic()
-    assert b.add(1, 2) == 3
-
+    """_summary_
+    """
+    basic_math = basic.Basic()
+    assert basic_math.add(1, 2) == 3
 
 def test_subtract():
-    b = basic.Basic()
-    assert b.subtract(1, 2) == -1
-
+    """_summary_
+    """
+    basic_math = basic.Basic()
+    assert basic_math.subtract(1, 2) == -1

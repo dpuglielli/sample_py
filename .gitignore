@@ -2,3 +2,5 @@
 poetry.lock
 dist
 .pytest_cache
+.coverage
+cov.xml
